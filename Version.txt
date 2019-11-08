@@ -1,0 +1,30 @@
+--EMUC Linux Socket CAN Daemon
+1. Release emucd.c version 1.2
+
+
+--EMUC Linux Socket CAN driver
+
+-v1.9
+1. dev->destructor to dev->priv_destructor for kernel version >= 4.11.9
+
+-v1.8
+1. Fix tx_packets bug
+
+-v1.7
+1. Fix data loss in Linux kernel over 4.1.5. (can_skb_prv(skb)->skbcnt = 0)
+
+-v1.6
+1. Change libemuc.a to v1.3.3 to support -fPIC.
+
+-v1.5
+1. Fixed send data loss on a better performance platform.(info->xleft += actual)
+
+-v1.4
+1. Change lrc check function from kernel to custom library.
+
+-v1.3
+1. Move libemuccan.c to build with emuc.c.
+
+-v1.2
+1. Change data handler of libemuccan.a from array to pointer.
+2. Change libemuc.a to v1.3.1.
